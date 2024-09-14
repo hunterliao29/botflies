@@ -5,6 +5,9 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME'
+git clone --bare https://github.com/hunterliao29/botflies.git $HOME/.dotfiles
+dotfiles config --local status.showUntrackedFiles no
+dotfiles checkout
 
 brew tap FelixKratz/formulae
 brew tap koekeishiya/formulae
