@@ -4,10 +4,9 @@
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME'
 git clone --bare https://github.com/hunterliao29/dotfiles.git $HOME/.dotfiles
-dotfiles config --local status.showUntrackedFiles no
-dotfiles checkout
+/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME config --local status.showUntrackedFiles no
+/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME checkout
 
 brew tap FelixKratz/formulae
 brew tap koekeishiya/formulae
