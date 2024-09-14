@@ -24,6 +24,7 @@ brew install lazygit
 brew install neovim
 brew install wezterm
 brew install git
+brew install lua
 brew install jq
 brew install fzf
 brew install yazi
